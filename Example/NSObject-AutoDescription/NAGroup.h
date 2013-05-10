@@ -12,6 +12,8 @@
 
 @interface NAGroup : NSObject
 
++ (instancetype)group;
+
 @property (nonatomic, strong) NSNumber *groupID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, strong) NSSet *users;

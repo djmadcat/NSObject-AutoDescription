@@ -22,14 +22,14 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-	NAUser *user = [[NAUser alloc] init];
+	NAUser *user = [NAUser user];
 	user.userID = @16;
 	user.firstName = @"Hans";
 	user.lastName = @"Schneider";
 	user.login = @"user333";
 	user.email = @"h.schneider@datas.com";
 
-	NASuperUser *superUser = [[NASuperUser alloc] init];
+	NASuperUser *superUser = [NASuperUser user];
 	superUser.userID = @12;
 	superUser.firstName = @"Super";
 	superUser.lastName = @"User";
@@ -39,7 +39,7 @@
 	superUser.connections = @{@"twitter":@"someadmin", @"facebook":@"someadmin", @"other":@{@"another_social_network":@"someadmin"}};
 	superUser.manager = superUser;
 
-	NAGroup *group = [[NAGroup alloc] init];
+	NAGroup *group = [NAGroup group];
 	group.groupID = @22;
 	group.name = @"admins";
 	group.users = [NSSet setWithArray:@[user, superUser]];

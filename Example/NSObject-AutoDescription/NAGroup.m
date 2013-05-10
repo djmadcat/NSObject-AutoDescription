@@ -13,6 +13,11 @@
 
 @implementation NAGroup
 
++ (instancetype)group
+{
+	return [[self alloc] init];
+}
+
 - (NSString *)description
 {
 	return [self autoDescription];

@@ -13,6 +13,11 @@
 
 @implementation NAUser
 
++ (instancetype)user
+{
+	return [[self alloc] init];
+}
+
 - (NSString *)description
 {
 	return [self autoDescription];

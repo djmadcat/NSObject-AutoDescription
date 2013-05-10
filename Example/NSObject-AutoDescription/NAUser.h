@@ -12,6 +12,8 @@
 
 @interface NAUser : NSObject
 
++ (instancetype)user;
+
 @property (nonatomic, strong) NSNumber *userID;
 @property (nonatomic, copy) NSString *login;
 @property (nonatomic, copy) NSString *firstName;

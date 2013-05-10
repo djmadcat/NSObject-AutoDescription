@@ -18,51 +18,85 @@
 - (NSString *)cleanDescription
 {
 	NSString *result;
+	result = [self description];
+	return result;
+}
 
-	if ([self isKindOfClass:[NSString class]]) {
-		NSString *zelf = (NSString *)self;
+@end
 
-		if ([zelf rangeOfCharacterFromSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]].location == NSNotFound) {
-			result = zelf;
-		} else {
-			result = [NSString stringWithFormat:@"\"%@\"", zelf];
-		}
-	} else if ([self isKindOfClass:[NSArray class]]) {
-		NSArray *zelf = (NSArray *)self;
 
-		NSMutableString *elements = [NSMutableString string];
-		for (id value in zelf) {
-			[elements appendFormat:@"%@, ", [value cleanDescription]];
-		}
-		NSUInteger length = [elements length];
-		if (length > 2) {
-			[elements deleteCharactersInRange:NSMakeRange(length - 2, 2)];
-		}
+@implementation NSString (CleanDescription)
 
-		result = [NSString stringWithFormat:@"(%@)", elements];
-	} else if ([self isKindOfClass:[NSDictionary class]]) {
-		NSDictionary *zelf = (NSDictionary *)self;
+- (NSString *)cleanDescription
+{
+	NSString *result;
 
-		NSMutableString *elements = [NSMutableString string];
-		for (id key in zelf) {
-			id value = [zelf objectForKey:key];
-			[elements appendFormat:@"%@ = %@; ", [key cleanDescription], [value cleanDescription]];
-		}
-		NSUInteger length = [elements length];
-		if (length) {
-			[elements deleteCharactersInRange:NSMakeRange(length - 1, 1)];
-		}
-
-		result = [NSString stringWithFormat:@"{%@}", elements];
-	} else if ([self isKindOfClass:[NSSet class]]) {
-		NSSet *zelf = (NSSet *)self;
-
-		NSArray *allObjects = [zelf allObjects];
-
-		result = [NSString stringWithFormat:@"{%@}", [allObjects cleanDescription]];
+	if ([self rangeOfCharacterFromSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]].location == NSNotFound) {
+		result = self;
 	} else {
-		result = [self description];
+		result = [NSString stringWithFormat:@"\"%@\"", self];
 	}
+
+	return result;
+}
+
+@end
+
+
+@implementation NSArray (CleanDescription)
+
+- (NSString *)cleanDescription
+{
+	NSString *result;
+
+	NSMutableString *elements = [NSMutableString string];
+	for (id value in self) {
+		[elements appendFormat:@"%@, ", [value cleanDescription]];
+	}
+	NSUInteger length = [elements length];
+	if (length > 2) {
+		[elements deleteCharactersInRange:NSMakeRange(length - 2, 2)];
+	}
+
+	result = [NSString stringWithFormat:@"(%@)", elements];
+
+	return result;
+}
+
+@end
+
+
+@implementation NSSet (CleanDescription)
+
+- (NSString *)cleanDescription
+{
+	NSString *result;
+
+	result = [NSString stringWithFormat:@"{%@}", [[self allObjects] cleanDescription]];
+
+	return result;
+}
+
+@end
+
+
+@implementation NSDictionary (CleanDescription)
+
+- (NSString *)cleanDescription
+{
+	NSString *result;
+
+	NSMutableString *elements = [NSMutableString string];
+	for (id key in self) {
+		id value = [self objectForKey:key];
+		[elements appendFormat:@"%@ = %@; ", [key cleanDescription], [value cleanDescription]];
+	}
+	NSUInteger length = [elements length];
+	if (length) {
+		[elements deleteCharactersInRange:NSMakeRange(length - 1, 1)];
+	}
+
+	result = [NSString stringWithFormat:@"{%@}", elements];
 
 	return result;
 }

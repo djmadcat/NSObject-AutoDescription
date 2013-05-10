@@ -18,3 +18,31 @@
 - (NSString *)cleanDescription;
 
 @end
+
+
+@interface NSString (CleanDescription)
+
+- (NSString *)cleanDescription;
+
+@end
+
+
+@interface NSArray (CleanDescription)
+
+- (NSString *)cleanDescription;
+
+@end
+
+
+@interface NSSet (CleanDescription)
+
+- (NSString *)cleanDescription;
+
+@end
+
+
+@interface NSDictionary (CleanDescription)
+
+- (NSString *)cleanDescription;
+
+@end

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NAAppDelegate_iOS.h
 //  NSObject-AutoDescription
 //
 //  Created by Alexey Aleshkov on 08.05.13.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface NAAppDelegate : UIResponder <UIApplicationDelegate>
+@interface NAAppDelegate_iOS : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

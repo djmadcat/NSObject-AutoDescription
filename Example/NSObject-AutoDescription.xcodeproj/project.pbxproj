@@ -17,7 +17,18 @@
 		27BD80C6173AE31200FFDF85 /* NASuperUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C5173AE31200FFDF85 /* NASuperUser.m */; };
 		27BD80C9173B03EA00FFDF85 /* NAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C8173B03EA00FFDF85 /* NAGroup.m */; };
 		27BD80D0173B102B00FFDF85 /* NSObject+CleanDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80CF173B102B00FFDF85 /* NSObject+CleanDescription.m */; };
+		27D8CA8017AED367000E42EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BD809B173ADE1600FFDF85 /* Foundation.framework */; };
+		27D8CA8317AED367000E42EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8CA8217AED367000E42EF /* main.m */; };
+		27D8CA8C17AED3CF000E42EF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D8CA8B17AED3CF000E42EF /* AppKit.framework */; };
+		27D8CA9017AED737000E42EF /* NSApplicationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8CA8F17AED736000E42EF /* NSApplicationSupport.m */; };
+		27D8CA9117AEE393000E42EF /* NAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C1173AE10E00FFDF85 /* NAUser.m */; };
+		27D8CA9217AEE393000E42EF /* NASuperUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C5173AE31200FFDF85 /* NASuperUser.m */; };
+		27D8CA9317AEE393000E42EF /* NAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C8173B03EA00FFDF85 /* NAGroup.m */; };
 		27D8CA9617AEE463000E42EF /* NAMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8CA9517AEE463000E42EF /* NAMain.m */; };
+		27D8CA9917AEE6A3000E42EF /* NAAppDelegate_Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8CA9817AEE6A3000E42EF /* NAAppDelegate_Mac.m */; };
+		27D8CA9A17AEE6FE000E42EF /* NAMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8CA9517AEE463000E42EF /* NAMain.m */; };
+		27D8CA9E17AEE9BA000E42EF /* NSObject+CleanDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80CF173B102B00FFDF85 /* NSObject+CleanDescription.m */; };
+		27D8CA9F17AEE9BB000E42EF /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80B8173ADEE500FFDF85 /* NSObject+AutoDescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +51,17 @@
 		27BD80C8173B03EA00FFDF85 /* NAGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAGroup.m; sourceTree = "<group>"; };
 		27BD80CE173B102B00FFDF85 /* NSObject+CleanDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CleanDescription.h"; sourceTree = "<group>"; };
 		27BD80CF173B102B00FFDF85 /* NSObject+CleanDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CleanDescription.m"; sourceTree = "<group>"; };
+		27D8CA7F17AED366000E42EF /* NSObject-AutoDescription-Mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSObject-AutoDescription-Mac"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D8CA8217AED367000E42EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27D8CA8517AED367000E42EF /* NSObject-AutoDescription-Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject-AutoDescription-Mac-Prefix.pch"; sourceTree = "<group>"; };
+		27D8CA8617AED367000E42EF /* NSObject_AutoDescription_Mac.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NSObject_AutoDescription_Mac.1; sourceTree = "<group>"; };
+		27D8CA8B17AED3CF000E42EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		27D8CA8E17AED736000E42EF /* NSApplicationSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSApplicationSupport.h; sourceTree = "<group>"; };
+		27D8CA8F17AED736000E42EF /* NSApplicationSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSApplicationSupport.m; sourceTree = "<group>"; };
 		27D8CA9417AEE463000E42EF /* NAMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAMain.h; sourceTree = "<group>"; };
 		27D8CA9517AEE463000E42EF /* NAMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAMain.m; sourceTree = "<group>"; };
+		27D8CA9717AEE6A3000E42EF /* NAAppDelegate_Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAppDelegate_Mac.h; sourceTree = "<group>"; };
+		27D8CA9817AEE6A3000E42EF /* NAAppDelegate_Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAppDelegate_Mac.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27D8CA7C17AED366000E42EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D8CA8017AED367000E42EF /* Foundation.framework in Frameworks */,
+				27D8CA8C17AED3CF000E42EF /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +93,7 @@
 				27BD80B6173ADED000FFDF85 /* NSObject+AutoDescription */,
 				27D8CA7A17AED246000E42EF /* NSObject-AutoDescription */,
 				27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */,
+				27D8CA8117AED367000E42EF /* NSObject-AutoDescription-Mac */,
 				27BD8098173ADE1600FFDF85 /* Frameworks */,
 				27BD8097173ADE1600FFDF85 /* Products */,
 			);
@@ -73,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription-iOS.app */,
+				27D8CA7F17AED366000E42EF /* NSObject-AutoDescription-Mac */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +111,10 @@
 		27BD8098173ADE1600FFDF85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27BD8099173ADE1600FFDF85 /* UIKit.framework */,
 				27BD809B173ADE1600FFDF85 /* Foundation.framework */,
+				27BD8099173ADE1600FFDF85 /* UIKit.framework */,
 				27BD809D173ADE1600FFDF85 /* CoreGraphics.framework */,
+				27D8CA8B17AED3CF000E42EF /* AppKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +166,28 @@
 			path = "NSObject-AutoDescription";
 			sourceTree = "<group>";
 		};
+		27D8CA8117AED367000E42EF /* NSObject-AutoDescription-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				27D8CA9717AEE6A3000E42EF /* NAAppDelegate_Mac.h */,
+				27D8CA9817AEE6A3000E42EF /* NAAppDelegate_Mac.m */,
+				27D8CA8417AED367000E42EF /* Supporting Files */,
+			);
+			path = "NSObject-AutoDescription-Mac";
+			sourceTree = "<group>";
+		};
+		27D8CA8417AED367000E42EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27D8CA8617AED367000E42EF /* NSObject_AutoDescription_Mac.1 */,
+				27D8CA8217AED367000E42EF /* main.m */,
+				27D8CA8E17AED736000E42EF /* NSApplicationSupport.h */,
+				27D8CA8F17AED736000E42EF /* NSApplicationSupport.m */,
+				27D8CA8517AED367000E42EF /* NSObject-AutoDescription-Mac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +207,22 @@
 			productName = "NSObject-AutoDescription";
 			productReference = 27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription-iOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		27D8CA7E17AED366000E42EF /* NSObject-AutoDescription-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D8CA8817AED367000E42EF /* Build configuration list for PBXNativeTarget "NSObject-AutoDescription-Mac" */;
+			buildPhases = (
+				27D8CA7B17AED366000E42EF /* Sources */,
+				27D8CA7C17AED366000E42EF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSObject-AutoDescription-Mac";
+			productName = "NSObject-AutoDescription-Mac";
+			productReference = 27D8CA7F17AED366000E42EF /* NSObject-AutoDescription-Mac */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				27BD8095173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */,
+				27D8CA7E17AED366000E42EF /* NSObject-AutoDescription-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +274,22 @@
 				27BD80C9173B03EA00FFDF85 /* NAGroup.m in Sources */,
 				27BD80D0173B102B00FFDF85 /* NSObject+CleanDescription.m in Sources */,
 				27D8CA9617AEE463000E42EF /* NAMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D8CA7B17AED366000E42EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D8CA8317AED367000E42EF /* main.m in Sources */,
+				27D8CA9017AED737000E42EF /* NSApplicationSupport.m in Sources */,
+				27D8CA9117AEE393000E42EF /* NAUser.m in Sources */,
+				27D8CA9217AEE393000E42EF /* NASuperUser.m in Sources */,
+				27D8CA9317AEE393000E42EF /* NAGroup.m in Sources */,
+				27D8CA9917AEE6A3000E42EF /* NAAppDelegate_Mac.m in Sources */,
+				27D8CA9A17AEE6FE000E42EF /* NAMain.m in Sources */,
+				27D8CA9E17AEE9BA000E42EF /* NSObject+CleanDescription.m in Sources */,
+				27D8CA9F17AEE9BB000E42EF /* NSObject+AutoDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -257,8 +344,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -270,6 +357,7 @@
 				GCC_PREFIX_HEADER = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Prefix.pch";
 				INFOPLIST_FILE = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -281,7 +369,37 @@
 				GCC_PREFIX_HEADER = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Prefix.pch";
 				INFOPLIST_FILE = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		27D8CA8917AED367000E42EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSObject-AutoDescription-Mac/NSObject-AutoDescription-Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "NSObject-AutoDescription-Mac/NSObject-AutoDescription-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27D8CA8A17AED367000E42EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSObject-AutoDescription-Mac/NSObject-AutoDescription-Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "NSObject-AutoDescription-Mac/NSObject-AutoDescription-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -302,6 +420,15 @@
 			buildConfigurations = (
 				27BD80B4173ADE1600FFDF85 /* Debug */,
 				27BD80B5173ADE1600FFDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D8CA8817AED367000E42EF /* Build configuration list for PBXNativeTarget "NSObject-AutoDescription-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D8CA8917AED367000E42EF /* Debug */,
+				27D8CA8A17AED367000E42EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSObject-AutoDescription.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSObject-AutoDescription-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BD8099173ADE1600FFDF85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27BD809B173ADE1600FFDF85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27BD809D173ADE1600FFDF85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,7 +58,8 @@
 		27BD808D173ADE1600FFDF85 = {
 			isa = PBXGroup;
 			children = (
-				27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription */,
+				27D8CA7A17AED246000E42EF /* NSObject-AutoDescription */,
+				27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */,
 				27BD8098173ADE1600FFDF85 /* Frameworks */,
 				27BD8097173ADE1600FFDF85 /* Products */,
 			);
@@ -67,7 +68,7 @@
 		27BD8097173ADE1600FFDF85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription.app */,
+				27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,21 +83,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription */ = {
+		27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				27BD80A8173ADE1600FFDF85 /* NAAppDelegate.h */,
 				27BD80A9173ADE1600FFDF85 /* NAAppDelegate.m */,
-				27BD80C0173AE10E00FFDF85 /* NAUser.h */,
-				27BD80C1173AE10E00FFDF85 /* NAUser.m */,
-				27BD80C4173AE31200FFDF85 /* NASuperUser.h */,
-				27BD80C5173AE31200FFDF85 /* NASuperUser.m */,
-				27BD80C7173B03EA00FFDF85 /* NAGroup.h */,
-				27BD80C8173B03EA00FFDF85 /* NAGroup.m */,
 				27BD80B6173ADED000FFDF85 /* NSObject+AutoDescription */,
 				27BD80A0173ADE1600FFDF85 /* Supporting Files */,
 			);
-			path = "NSObject-AutoDescription";
+			path = "NSObject-AutoDescription-iOS";
 			sourceTree = "<group>";
 		};
 		27BD80A0173ADE1600FFDF85 /* Supporting Files */ = {
@@ -121,12 +116,25 @@
 			path = "../../NSObject+AutoDescription";
 			sourceTree = "<group>";
 		};
+		27D8CA7A17AED246000E42EF /* NSObject-AutoDescription */ = {
+			isa = PBXGroup;
+			children = (
+				27BD80C0173AE10E00FFDF85 /* NAUser.h */,
+				27BD80C1173AE10E00FFDF85 /* NAUser.m */,
+				27BD80C4173AE31200FFDF85 /* NASuperUser.h */,
+				27BD80C5173AE31200FFDF85 /* NASuperUser.m */,
+				27BD80C7173B03EA00FFDF85 /* NAGroup.h */,
+				27BD80C8173B03EA00FFDF85 /* NAGroup.m */,
+			);
+			path = "NSObject-AutoDescription";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27BD8095173ADE1600FFDF85 /* NSObject-AutoDescription */ = {
+		27BD8095173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27BD80B3173ADE1600FFDF85 /* Build configuration list for PBXNativeTarget "NSObject-AutoDescription" */;
+			buildConfigurationList = 27BD80B3173ADE1600FFDF85 /* Build configuration list for PBXNativeTarget "NSObject-AutoDescription-iOS" */;
 			buildPhases = (
 				27BD8092173ADE1600FFDF85 /* Sources */,
 				27BD8093173ADE1600FFDF85 /* Frameworks */,
@@ -136,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = "NSObject-AutoDescription";
+			name = "NSObject-AutoDescription-iOS";
 			productName = "NSObject-AutoDescription";
-			productReference = 27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription.app */;
+			productReference = 27BD8096173ADE1600FFDF85 /* NSObject-AutoDescription-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27BD8095173ADE1600FFDF85 /* NSObject-AutoDescription */,
+				27BD8095173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -253,8 +261,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSObject-AutoDescription/NSObject-AutoDescription-Prefix.pch";
-				INFOPLIST_FILE = "NSObject-AutoDescription/NSObject-AutoDescription-Info.plist";
+				GCC_PREFIX_HEADER = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Prefix.pch";
+				INFOPLIST_FILE = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -264,8 +272,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSObject-AutoDescription/NSObject-AutoDescription-Prefix.pch";
-				INFOPLIST_FILE = "NSObject-AutoDescription/NSObject-AutoDescription-Info.plist";
+				GCC_PREFIX_HEADER = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Prefix.pch";
+				INFOPLIST_FILE = "NSObject-AutoDescription-iOS/NSObject-AutoDescription-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27BD80B3173ADE1600FFDF85 /* Build configuration list for PBXNativeTarget "NSObject-AutoDescription" */ = {
+		27BD80B3173ADE1600FFDF85 /* Build configuration list for PBXNativeTarget "NSObject-AutoDescription-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27BD80B4173ADE1600FFDF85 /* Debug */,

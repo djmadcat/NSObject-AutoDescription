@@ -17,6 +17,7 @@
 		27BD80C6173AE31200FFDF85 /* NASuperUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C5173AE31200FFDF85 /* NASuperUser.m */; };
 		27BD80C9173B03EA00FFDF85 /* NAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C8173B03EA00FFDF85 /* NAGroup.m */; };
 		27BD80D0173B102B00FFDF85 /* NSObject+CleanDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80CF173B102B00FFDF85 /* NSObject+CleanDescription.m */; };
+		27D8CA9617AEE463000E42EF /* NAMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8CA9517AEE463000E42EF /* NAMain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		27BD80C8173B03EA00FFDF85 /* NAGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAGroup.m; sourceTree = "<group>"; };
 		27BD80CE173B102B00FFDF85 /* NSObject+CleanDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CleanDescription.h"; sourceTree = "<group>"; };
 		27BD80CF173B102B00FFDF85 /* NSObject+CleanDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CleanDescription.m"; sourceTree = "<group>"; };
+		27D8CA9417AEE463000E42EF /* NAMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAMain.h; sourceTree = "<group>"; };
+		27D8CA9517AEE463000E42EF /* NAMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAMain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 		27D8CA7A17AED246000E42EF /* NSObject-AutoDescription */ = {
 			isa = PBXGroup;
 			children = (
+				27D8CA9417AEE463000E42EF /* NAMain.h */,
+				27D8CA9517AEE463000E42EF /* NAMain.m */,
 				27BD80C0173AE10E00FFDF85 /* NAUser.h */,
 				27BD80C1173AE10E00FFDF85 /* NAUser.m */,
 				27BD80C4173AE31200FFDF85 /* NASuperUser.h */,
@@ -197,6 +202,7 @@
 				27BD80C6173AE31200FFDF85 /* NASuperUser.m in Sources */,
 				27BD80C9173B03EA00FFDF85 /* NAGroup.m in Sources */,
 				27BD80D0173B102B00FFDF85 /* NSObject+CleanDescription.m in Sources */,
+				27D8CA9617AEE463000E42EF /* NAMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

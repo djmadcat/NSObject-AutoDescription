@@ -1,27 +1,19 @@
 //
-//  AppDelegate.m
+//  NAMain.m
 //  NSObject-AutoDescription
 //
-//  Created by Alexey Aleshkov on 08.05.13.
+//  Created by Alexey Aleshkov on 04.08.13.
 //  Copyright (c) 2013 Alexey Aleshkov. All rights reserved.
 //
 
 
-#import "NAAppDelegate.h"
-#import "NAUser.h"
-#import "NASuperUser.h"
-#import "NAGroup.h"
+#import "NAMain.h"
 
 
-@implementation NAAppDelegate
+@implementation NAMain
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
++ (void)main
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-
 	NAUser *user = [NAUser user];
 	user.userID = @16;
 	user.firstName = @"Hans";
@@ -52,8 +44,6 @@
 	NSLog(@"nil is %@", nil);
 	NSLog(@"NSNull is %@", [NSNull null]);
 	NSLog(@"Recursive self for enclosed context is (self)");
-
-    return YES;
 }
 
 @end

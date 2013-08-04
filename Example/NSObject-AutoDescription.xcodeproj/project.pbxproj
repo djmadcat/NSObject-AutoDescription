@@ -61,6 +61,7 @@
 		27BD808D173ADE1600FFDF85 = {
 			isa = PBXGroup;
 			children = (
+				27BD80B6173ADED000FFDF85 /* NSObject+AutoDescription */,
 				27D8CA7A17AED246000E42EF /* NSObject-AutoDescription */,
 				27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */,
 				27BD8098173ADE1600FFDF85 /* Frameworks */,
@@ -91,7 +92,6 @@
 			children = (
 				27BD80A8173ADE1600FFDF85 /* NAAppDelegate_iOS.h */,
 				27BD80A9173ADE1600FFDF85 /* NAAppDelegate_iOS.m */,
-				27BD80B6173ADED000FFDF85 /* NSObject+AutoDescription */,
 				27BD80A0173ADE1600FFDF85 /* Supporting Files */,
 			);
 			path = "NSObject-AutoDescription-iOS";
@@ -116,7 +116,7 @@
 				27BD80CF173B102B00FFDF85 /* NSObject+CleanDescription.m */,
 			);
 			name = "NSObject+AutoDescription";
-			path = "../../NSObject+AutoDescription";
+			path = "../NSObject+AutoDescription";
 			sourceTree = "<group>";
 		};
 		27D8CA7A17AED246000E42EF /* NSObject-AutoDescription */ = {

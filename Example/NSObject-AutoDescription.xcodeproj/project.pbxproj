@@ -11,7 +11,7 @@
 		27BD809C173ADE1600FFDF85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BD809B173ADE1600FFDF85 /* Foundation.framework */; };
 		27BD809E173ADE1600FFDF85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BD809D173ADE1600FFDF85 /* CoreGraphics.framework */; };
 		27BD80A6173ADE1600FFDF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80A5173ADE1600FFDF85 /* main.m */; };
-		27BD80AA173ADE1600FFDF85 /* NAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80A9173ADE1600FFDF85 /* NAAppDelegate.m */; };
+		27BD80AA173ADE1600FFDF85 /* NAAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80A9173ADE1600FFDF85 /* NAAppDelegate_iOS.m */; };
 		27BD80B9173ADEE500FFDF85 /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80B8173ADEE500FFDF85 /* NSObject+AutoDescription.m */; };
 		27BD80C2173AE10E00FFDF85 /* NAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C1173AE10E00FFDF85 /* NAUser.m */; };
 		27BD80C6173AE31200FFDF85 /* NASuperUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD80C5173AE31200FFDF85 /* NASuperUser.m */; };
@@ -28,8 +28,8 @@
 		27BD80A1173ADE1600FFDF85 /* NSObject-AutoDescription-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSObject-AutoDescription-Info.plist"; sourceTree = "<group>"; };
 		27BD80A5173ADE1600FFDF85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27BD80A7173ADE1600FFDF85 /* NSObject-AutoDescription-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject-AutoDescription-Prefix.pch"; sourceTree = "<group>"; };
-		27BD80A8173ADE1600FFDF85 /* NAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAAppDelegate.h; sourceTree = "<group>"; };
-		27BD80A9173ADE1600FFDF85 /* NAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAAppDelegate.m; sourceTree = "<group>"; };
+		27BD80A8173ADE1600FFDF85 /* NAAppDelegate_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAAppDelegate_iOS.h; sourceTree = "<group>"; };
+		27BD80A9173ADE1600FFDF85 /* NAAppDelegate_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAAppDelegate_iOS.m; sourceTree = "<group>"; };
 		27BD80B7173ADEE500FFDF85 /* NSObject+AutoDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDescription.h"; sourceTree = "<group>"; };
 		27BD80B8173ADEE500FFDF85 /* NSObject+AutoDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoDescription.m"; sourceTree = "<group>"; };
 		27BD80C0173AE10E00FFDF85 /* NAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAUser.h; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 		27BD809F173ADE1600FFDF85 /* NSObject-AutoDescription-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				27BD80A8173ADE1600FFDF85 /* NAAppDelegate.h */,
-				27BD80A9173ADE1600FFDF85 /* NAAppDelegate.m */,
+				27BD80A8173ADE1600FFDF85 /* NAAppDelegate_iOS.h */,
+				27BD80A9173ADE1600FFDF85 /* NAAppDelegate_iOS.m */,
 				27BD80B6173ADED000FFDF85 /* NSObject+AutoDescription */,
 				27BD80A0173ADE1600FFDF85 /* Supporting Files */,
 			);
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27BD80A6173ADE1600FFDF85 /* main.m in Sources */,
-				27BD80AA173ADE1600FFDF85 /* NAAppDelegate.m in Sources */,
+				27BD80AA173ADE1600FFDF85 /* NAAppDelegate_iOS.m in Sources */,
 				27BD80B9173ADEE500FFDF85 /* NSObject+AutoDescription.m in Sources */,
 				27BD80C2173AE10E00FFDF85 /* NAUser.m in Sources */,
 				27BD80C6173AE31200FFDF85 /* NASuperUser.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  NAAppDelegate_iOS.m
 //  NSObject-AutoDescription
 //
 //  Created by Alexey Aleshkov on 08.05.13.
@@ -7,11 +7,11 @@
 //
 
 
-#import "NAAppDelegate.h"
+#import "NAAppDelegate_iOS.h"
 #import "NAMain.h"
 
 
-@implementation NAAppDelegate
+@implementation NAAppDelegate_iOS
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

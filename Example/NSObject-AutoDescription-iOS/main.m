@@ -8,12 +8,12 @@
 
 
 #import <UIKit/UIKit.h>
-#import "NAAppDelegate.h"
+#import "NAAppDelegate_iOS.h"
 
 
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([NAAppDelegate class]));
+	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([NAAppDelegate_iOS class]));
 	}
 }
